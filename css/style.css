@@ -160,7 +160,7 @@ body {
   margin-right: 14px;
 }
 .text--bottom {
-  width: 350px;
+  width: 394px;
   margin-bottom: 40px;
 }
 .text--program {
@@ -726,6 +726,9 @@ body {
 
   .text {
     font-size: 15px;
+  }
+  .text--bottom {
+    width: 364px;
   }
 
   .header__menu--link {
