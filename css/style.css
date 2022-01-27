@@ -49,10 +49,6 @@ li {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "TT Travels";
   color: #231F20;
@@ -87,8 +83,9 @@ body {
   height: 100%;
 }
 .header__menu {
-  display: block;
-  margin-left: 130px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 .header__menu--link {
   color: #231F20;
@@ -244,6 +241,7 @@ body {
 
 .intro {
   position: relative;
+  overflow: hidden;
   padding: 55px 0 206px 0;
   background-image: url("../img/intro-bg.svg");
   background-repeat: no-repeat;
@@ -547,7 +545,7 @@ body {
 }
 .buy__inner--item {
   margin: 0 auto;
-  width: 270px;
+  width: auto;
 }
 .buy__img {
   margin: 0 auto;
@@ -900,6 +898,9 @@ body {
   }
   .about__inner::after {
     top: 25%;
+  }
+  .about__inner--item:not(.item__last) {
+    width: auto;
   }
 
   .text--bonus {
